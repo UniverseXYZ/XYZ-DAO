@@ -2,9 +2,9 @@
 pragma solidity 0.7.6;
 
 abstract contract Parameters {
-    uint256 public warmUpDuration = 4 days;
-    uint256 public activeDuration = 4 days;
-    uint256 public queueDuration = 4 days;
+    uint256 public warmUpDuration = 2 days;
+    uint256 public activeDuration = 2 days;
+    uint256 public queueDuration = 1 days;
     uint256 public gracePeriodDuration = 4 days;
 
     uint256 public acceptanceThreshold = 60;
