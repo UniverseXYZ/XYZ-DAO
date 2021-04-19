@@ -1020,8 +1020,8 @@ describe('Governance', function () {
             await governance.queue(1);
 
             proposal = await governance.proposals(1);
-            await moveAtTimestamp(proposal.eta.toNumber() + 1);
 
+            await moveAtTimestamp(proposal.eta.toNumber() + 2);
             expect(await governance.state(2)).to.be.equal(ProposalState.Active);
 
             await governance.execute(1);
