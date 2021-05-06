@@ -1,4 +1,4 @@
-# BarnBridge Governance contract
+# xyzDAO Governance contract
 
 ## How it works
 Please see the [SPEC](./SPEC.md)
@@ -28,6 +28,10 @@ yarn run coverage
 ### Mainnet
 ```shell
 Governance deployed at:  0x4cAE362D7F227e3d306f70ce4878E245563F3069
+```
+### Rinkeby
+```shell
+Governance deployed at:  0x889AF716442bAdfB7F546745973dE9073CEBA6aC
 ```
 
 ## Audits
