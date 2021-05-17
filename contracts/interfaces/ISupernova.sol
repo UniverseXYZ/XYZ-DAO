@@ -2,7 +2,7 @@
 pragma solidity 0.7.6;
 pragma experimental ABIEncoderV2;
 
-interface IBarn {
+interface ISupernova {
     struct Stake {
         uint256 timestamp;
         uint256 amount;
@@ -10,7 +10,7 @@ interface IBarn {
         address delegatedTo;
     }
 
-    // deposit allows a user to add more bond to his staked balance
+    // deposit allows a user to add more xyz to his staked balance
     function deposit(uint256 amount) external;
 
     // withdraw allows a user to withdraw funds if the balance is not locked
@@ -40,12 +40,12 @@ interface IBarn {
     // votingPowerAtTs returns the voting power (bonus included) + delegated voting power for a user at a point in time
     function votingPowerAtTs(address user, uint256 timestamp) external view returns (uint256);
 
-    // bondStaked returns the total raw amount of BOND staked at the current block
-    function bondStaked() external view returns (uint256);
+    // xyzStaked returns the total raw amount of BOND staked at the current block
+    function xyzStaked() external view returns (uint256);
 
-    // bondStakedAtTs returns the total raw amount of BOND users have deposited into the contract
+    // xyzStakedAtTs returns the total raw amount of BOND users have deposited into the contract
     // it does not include any bonus
-    function bondStakedAtTs(uint256 timestamp) external view returns (uint256);
+    function xyzStakedAtTs(uint256 timestamp) external view returns (uint256);
 
     // delegatedPower returns the total voting power that a user received from other users
     function delegatedPower(address user) external view returns (uint256);

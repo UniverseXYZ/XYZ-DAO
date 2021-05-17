@@ -8,7 +8,7 @@ Please see the [SPEC](./SPEC.md)
 
 ### 1. Clone this repo
 ```shell
-git clone git@github.com:BarnBridge/BarnBridge-DAO.git
+git clone git@github.com:SupernovaBridge/SupernovaBridge-DAO.git
 ```
 
 ### 2. Install dependencies
@@ -35,5 +35,5 @@ Governance deployed at:  0x889AF716442bAdfB7F546745973dE9073CEBA6aC
 ```
 
 ## Audits
-- [QuantStamp](https://github.com/BarnBridge/BarnBridge-PM/blob/master/audits/Quantstamp-DAO.pdf)
-- [Haechi](https://github.com/BarnBridge/BarnBridge-PM/blob/master/audits/HAECHI-DAO.pdf)
+- [QuantStamp](https://github.com/SupernovaBridge/SupernovaBridge-PM/blob/master/audits/Quantstamp-DAO.pdf)
+- [Haechi](https://github.com/SupernovaBridge/SupernovaBridge-PM/blob/master/audits/HAECHI-DAO.pdf)

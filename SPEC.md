@@ -1,7 +1,7 @@
 ## Thresholds
 
-- **Create proposal**: 1% of BOND staked in Barn
-- **Minimum quorum**: 40% of BOND staked in Barn
+- **Create proposal**: 1% of BOND staked in Supernova
+- **Minimum quorum**: 40% of BOND staked in Supernova
 - **Minimum acceptance**: 60% of votes
 
 ## Proposals

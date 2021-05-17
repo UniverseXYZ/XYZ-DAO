@@ -65,7 +65,7 @@ File                   |  % Stmts | % Branch |  % Funcs |  % Lines |Uncovered Li
   Governance.sol       |    94.54 |    85.34 |    88.89 |    94.54 |... 463,472,473 |
   Parameters.sol       |      100 |    78.57 |      100 |      100 |                |
  contracts/interfaces/ |      100 |      100 |      100 |      100 |                |
-  IBarn.sol            |      100 |      100 |      100 |      100 |                |
+  ISupernova.sol            |      100 |      100 |      100 |      100 |                |
   IBridge.sol          |      100 |      100 |      100 |      100 |                |
 -----------------------|----------|----------|----------|----------|----------------|
 All files              |    95.31 |    84.06 |    92.11 |    95.33 |                |

@@ -1,10 +1,10 @@
 // SPDX-License-Identifier: Apache-2.0
 pragma solidity ^0.7.1;
 
-import "../interfaces/IBarn.sol";
+import "../interfaces/ISupernova.sol";
 
-contract BarnMock {
-    uint256 private _bondStaked;
+contract SupernovaMock {
+    uint256 private _xyzStaked;
     mapping(address => uint256) private _votingPowerAtTs;
     bool public lockCreatorBalanceHasBeenCalled;
     bool public withdrawHasBeenCalled;
@@ -18,16 +18,16 @@ contract BarnMock {
         return _votingPowerAtTs[user];
     }
 
-    function bondStaked() external view returns (uint256) {
-        return _bondStaked;
+    function xyzStaked() external view returns (uint256) {
+        return _xyzStaked;
     }
 
-    function bondStakedAtTs(uint256 ts) public view returns (uint256) {
-        return _bondStaked;
+    function xyzStakedAtTs(uint256 ts) public view returns (uint256) {
+        return _xyzStaked;
     }
 
-    function setBondStaked(uint256 val) public {
-        _bondStaked = val;
+    function setXyzStaked(uint256 val) public {
+        _xyzStaked = val;
     }
 
     function setVotingPower(address user, uint256 val) public {

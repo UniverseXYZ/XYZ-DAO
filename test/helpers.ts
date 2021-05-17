@@ -1,6 +1,6 @@
 import { ethers } from 'hardhat';
 import { BigNumber, ContractFactory } from 'ethers';
-import { BarnMock, Governance } from '../typechain';
+import { SupernovaMock, Governance } from '../typechain';
 
 enum ProposalState {
     WarmUp,
@@ -18,12 +18,12 @@ enum ProposalState {
 export const ZERO_ADDRESS = '0x0000000000000000000000000000000000000000';
 export const tenPow18 = BigNumber.from(10).pow(18);
 
-export async function deployBarn (): Promise<BarnMock> {
-    const BarnMock: ContractFactory = await ethers.getContractFactory('BarnMock');
-    const barn: BarnMock = (await BarnMock.deploy()) as BarnMock;
-    await barn.deployed();
+export async function deploySupernova (): Promise<SupernovaMock> {
+    const SupernovaMock: ContractFactory = await ethers.getContractFactory('SupernovaMock');
+    const supernova: SupernovaMock = (await SupernovaMock.deploy()) as SupernovaMock;
+    await supernova.deployed();
 
-    return barn;
+    return supernova;
 }
 
 export async function deployGovernance (): Promise<Governance> {
