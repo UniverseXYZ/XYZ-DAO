@@ -1,12 +1,12 @@
 ## Thresholds
 
-- **Create proposal**: 1% of BOND staked in Supernova
-- **Minimum quorum**: 40% of BOND staked in Supernova
+- **Create proposal**: 1% of XYZ staked in Supernova
+- **Minimum quorum**: 40% of XYZ staked in Supernova
 - **Minimum acceptance**: 60% of votes
 
 ## Proposals
 
-- User that holds enough vBOND (see [+BBDAO specs: Thresholds](https://paper.dropbox.com/doc/G74Uq0SfdPs45MPZGcl1Q#:uid=961869200293351226173288&h2=Thresholds) ) can create a proposal
+- User that holds enough vXYZ can create a proposal
     - Proposal creator:
         - can vote on other proposals
         - can only have one active proposal at a time
@@ -24,7 +24,7 @@
 
 ![](diagrams/state.png)
 
-- after being created, proposal enters the **Warm-up** state for `WARMUP_PERIOD` to allow people to stake their BOND
+- after being created, proposal enters the **Warm-up** state for `WARMUP_PERIOD` to allow people to stake their XYZ
     - if the creator's balance falls below the 1% threshold the proposal can be cancelled by calling a function
 - after **Warm-up**, any user can vote
     - `VOTING_PERIOD` starts immediately after `WARMUP_PERIOD`
@@ -40,7 +40,7 @@
 ## Cancellation Proposals
 
 - This is a special type of proposal, with the following thresholds:
-    - Acceptance criteria: 50% of staked BOND
+    - Acceptance criteria: 50% of staked XYZ
 - Can be created only during the `QUEUE_PERIOD`
 - A proposal can only have one associated cancellation proposal at any given time
 - Anyone can vote on these proposals
@@ -54,7 +54,7 @@
 
 ## Voting
 
-- user can vote using his vBOND balance + delegated vBOND at the voting start timestamp/block
+- user can vote using his vXYZ balance + delegated vXYZ at the voting start timestamp/block
 - user can only be pro or against
 - user can cancel vote
 - user can change vote
