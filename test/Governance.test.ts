@@ -71,13 +71,13 @@ describe('Governance', function () {
         });
 
         it('activates if threshold is met', async function () {
-            await supernova.setXyzStaked(BigNumber.from(400000).mul(helpers.tenPow18));
+            await supernova.setXyzStaked(BigNumber.from(50_000_000).mul(helpers.tenPow18));
             await expect(governance.activate()).to.not.be.reverted;
             expect(await governance.isActive()).to.be.true;
         });
 
         it('reverts if already activated', async function () {
-            await supernova.setXyzStaked(BigNumber.from(400000).mul(helpers.tenPow18));
+            await supernova.setXyzStaked(BigNumber.from(50_000_000).mul(helpers.tenPow18));
             await governance.activate();
 
             await expect(governance.activate()).to.be.revertedWith('DAO already active');
@@ -86,7 +86,7 @@ describe('Governance', function () {
 
     describe('propose', function () {
         before(async function () {
-            await supernova.setXyzStaked(BigNumber.from(400000).mul(helpers.tenPow18));
+            await supernova.setXyzStaked(BigNumber.from(50_000_000).mul(helpers.tenPow18));
             await governance.activate();
             await supernova.setXyzStaked(0);
         });
